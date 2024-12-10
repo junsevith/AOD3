@@ -10,12 +10,26 @@ Instalujemy odpowiednią wersje tollchaina
 rustup toolchain install 1.80.0
 ```
 
-Kompilujemy programy poleceniem, lub plikiem makefile
+Kompilujemy programy poleceniem
 ```
-cargo build --workspace --release
+cargo build --bin dijkstra --bin dial --bin radixheap --release
+```
+lub plikiem makefile
+```
+make
 ```
 
 skompilowane programy pojawiają się w folderze:
 ```
 target/release
+```
+
+
+Jeśli chcemy skompilować wszystkie programy, łącznie z tymi do generowania wykresów
+```
+cargo build --release
+```
+lub plikiem makefile
+```
+make all
 ```
