@@ -1,20 +1,18 @@
-use std::collections::HashSet;
-
-pub struct RadixHeap {
+pub struct RadixHeapVec {
     last: usize,
-    pub bins: Vec<HashSet<usize>>,
+    pub bins: Vec<Vec<usize>>,
     pub distance: Vec<usize>,
-    position: Vec<Option<usize>>,
+    position: Vec<Option<(usize,usize)>>,
 }
 
-impl RadixHeap {
-    pub fn new(vertices: usize, c: usize) -> RadixHeap {
+impl RadixHeapVec {
+    pub fn new(vertices: usize, c: usize) -> RadixHeapVec {
         // let len = f64::log2((c + 1) as f64).ceil() + 1.;
         // let len = 64;
         let len = f64::log2((vertices * (c+1)) as f64).ceil() as usize;
-        RadixHeap {
+        RadixHeapVec {
             last: 0,
-            bins: vec![HashSet::new(); len as usize],
+            bins: vec![Vec::new(); len],
             distance: vec![usize::MAX; vertices],
             position: vec![None; vertices],
         }
@@ -42,8 +40,8 @@ impl RadixHeap {
     fn _add(&mut self, vertex: usize) {
         let distance = self.distance[vertex];
         let bin = self.get_bin(distance);
-        self.bins[bin].insert(vertex);
-        self.position[vertex] = Some(bin);
+        self.bins[bin].push(vertex);
+        self.position[vertex] = Some((bin, self.bins[bin].len()-1));
     }
 
     pub fn next(&mut self) -> Option<usize> {
@@ -60,19 +58,18 @@ impl RadixHeap {
             if !self.bins[bin].is_empty() {
 
                 if bin == 0 || bin == 1 {
-                    return Some(self.bins[bin].drain().next().unwrap());
+                    return self.bins[bin].pop()
                 }
 
-                let elements = self.bins[bin].drain().collect::<Vec<usize>>();
-                let res = *elements.iter().min_by_key(|&x| self.distance[*x]).unwrap();
-                self.last = self.distance[res];
+                let len = self.bins[bin].len();
+                let mut bin = std::mem::replace(&mut self.bins[bin], Vec::with_capacity(len));
+                let min = *bin.iter().min_by_key(|&x| self.distance[*x]).unwrap();
+                self.last = self.distance[min];
+                self.position[min] = None;
 
-                elements
-                    .into_iter()
-                    .filter(|&x| x != res)
-                    .for_each(|x| self._add(x));
+                bin.into_iter().filter(|&x| x != min).for_each(|x| self._add(x));
 
-                return Some(res);
+                return Some(min);
             }
             bin += 1;
         }
@@ -80,9 +77,15 @@ impl RadixHeap {
     }
 
     pub fn decrease_key(&mut self, vertex: usize, distance: usize) {
-        let bin = self.position[vertex];
-        if bin.is_some() {
-            self.bins[bin.unwrap()].remove(&vertex);
+        let pos = self.position[vertex];
+
+        if let Some(pos) = pos {
+            let (bin, pos) = pos;
+            self.bins[bin].swap_remove(pos);
+            if pos != self.bins[bin].len() {
+                let other = self.bins[bin][pos];
+                self.position[other] = Some((bin, pos));
+            }
         }
 
         self.add(vertex, distance);

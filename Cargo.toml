@@ -7,3 +7,11 @@ edition = "2021"
 rand = "0.9.0-beta.1"
 rayon = "1.10.0"
 plotters = "0.3.7"
+
+
+
+[profile.release]
+debug=1
+
+[profile.dev]
+debug=1

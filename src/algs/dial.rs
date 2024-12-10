@@ -3,12 +3,21 @@ use crate::algs::dijkstra::ShortestPaths;
 use crate::graph::Graph;
 
 pub fn dial(graph: &Graph, start: usize, c: usize) -> ShortestPaths {
+
     let len = graph.vertices.len();
     let mut bins = DialBins::new(c, len);
     let mut previous = vec![None; len];
     bins.add(start, 0);
 
+    let mut count = 0;
+
     while let Some(bin_contents) = bins.next() {
+
+        // count += 1;
+        // if count % (len / 100) == 0 {
+        //     println!("Done: {}%", count*100 / len);
+        // }
+
         for current in bin_contents {
             let distance = bins.distance[current];
 
