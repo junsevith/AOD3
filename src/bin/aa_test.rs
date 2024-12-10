@@ -4,9 +4,9 @@ use djikstra::graph::Graph;
 
 fn main() {
     // let data = Graph::from_file("ch9-1.1/inputs/Random4-c/Random4-c.0.0.gr");
-    let data = Graph::from_file("ch9-1.1/inputs/Square-C/Square-C.0.0.gr");
+    let data = Graph::from_file("ch9-1.1/inputs/Square-C/Square-C.14.0.gr");
     // let data = Graph::from_file("ch9-1.1/inputs/Long-C/Long-C.13.0.gr");
     println!("{:?}", data);
-    let res = radix_heap(&data.graph, 0, data.max_weight);
+    let res = dial(&data.graph, 0, data.max_weight);
     println!("{:?}", &res.distance[0..20]);
 }

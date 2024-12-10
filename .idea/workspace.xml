@@ -7,13 +7,19 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="workin" />
+    <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="workin">
+      <change afterPath="$PROJECT_DIR$/src/algs/dial_bins_vec.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/aa_test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/aa_test.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_structures.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_structures.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:release" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:test" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -34,7 +40,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/junsevith/AOD3.git&quot;,
-    &quot;accountId&quot;: &quot;ea83d790-9fb5-45c6-a818-1c56a58fb700&quot;
+    &quot;accountId&quot;: &quot;7388e34e-defb-4351-a11c-050992479d87&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
@@ -55,13 +61,14 @@
     "Cargo.Run aa_test.executor": "Run",
     "Cargo.Run sandbox.executor": "Run",
     "Cargo.Run test.executor": "Run",
+    "Cargo.Test dial_tests.executor": "Run",
     "Cargo.Test test_dial.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/pawel/RustroverProjects/AOD/src/algs",
+    "last_opened_file_path": "C:/Users/pawel/RustroverProjects/AOD3/src/algs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,11 +82,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pawel\RustroverProjects\AOD3\src\algs" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD\src\algs" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run sandbox">
+  <component name="RunManager" selected="Cargo.Test dial_tests">
     <configuration name="Run aa_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="buildProfileId" value="release" />
       <option name="command" value="run --package djikstra --bin aa_test" />
@@ -134,6 +142,24 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test dial_tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="buildProfileId" value="test" />
+      <option name="command" value="test --package djikstra --test test_structures dial_tests -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test djikstra" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="test --workspace" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -171,6 +197,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test dial_tests" />
         <item itemvalue="Cargo.Run aa_test" />
         <item itemvalue="Cargo.Run test" />
         <item itemvalue="Cargo.Test test_dial" />
@@ -194,6 +221,8 @@
       <workItem from="1733775616836" duration="280000" />
       <workItem from="1733775919715" duration="286000" />
       <workItem from="1733776230728" duration="18991000" />
+      <workItem from="1733833078472" duration="133000" />
+      <workItem from="1733833254733" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
