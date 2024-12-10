@@ -14,3 +14,8 @@ Kompilujemy programy poleceniem, lub plikiem makefile
 ```
 cargo build --workspace --release
 ```
+
+skompilowane programy pojawiają się w folderze:
+```
+target/release
+```
