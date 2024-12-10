@@ -15,7 +15,7 @@ pub fn experiment_set(name: &str, range: RangeInclusive<usize>, path: fn(usize) 
 
     let res = iter
         .clone()
-        .into_par_iter()
+        // .into_par_iter()
         .map(move |x| {
             // println!("experiment {}", x);
             let path = path(x);
