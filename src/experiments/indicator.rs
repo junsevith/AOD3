@@ -1,6 +1,5 @@
 use std::fmt::Display;
 use std::ops::{Div, Sub};
-use std::ptr::write;
 
 pub struct Indicator<T>
 {

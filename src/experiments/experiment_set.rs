@@ -11,7 +11,7 @@ use std::sync::{Arc, Mutex};
 
 pub fn experiment_set(name: &str, range: RangeInclusive<usize>, path: fn(usize) -> String) {
     let iter = range;
-    let mut indicator = Arc::new(Mutex::new(Indicator::new_linear(iter.clone(), name)));
+    let indicator = Arc::new(Mutex::new(Indicator::new_linear(iter.clone(), name)));
 
     let res = iter
         .clone()

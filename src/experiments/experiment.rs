@@ -3,22 +3,22 @@ use crate::algs::dijkstra::dijkstra;
 use crate::algs::radix_heap_alg::radix_heap;
 use crate::parsers::graph::GraphData;
 
-pub fn experiment(data: &GraphData, start: usize) -> ExperimentData {
+pub fn experiment(data: &GraphData, source: usize) -> ExperimentData {
     let dijkstra_time = {
         let start = std::time::Instant::now();
-        let _ = dijkstra(&data.graph, 0);
+        let _ = dijkstra(&data.graph, source);
         start.elapsed().as_nanos()
     } as f64;
 
     let dial_time = {
         let start = std::time::Instant::now();
-        let _ = dial(&data.graph, 0, data.max_weight);
+        let _ = dial(&data.graph, source, data.max_weight);
         start.elapsed().as_nanos()
     } as f64;
 
     let radix_time = {
         let start = std::time::Instant::now();
-        let _ = radix_heap(&data.graph, 0, data.max_weight);
+        let _ = radix_heap(&data.graph, source, data.max_weight);
         start.elapsed().as_nanos()
     } as f64;
 

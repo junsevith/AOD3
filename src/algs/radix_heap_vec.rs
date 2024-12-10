@@ -62,7 +62,7 @@ impl RadixHeapVec {
                 }
 
                 let len = self.bins[bin].len();
-                let mut bin = std::mem::replace(&mut self.bins[bin], Vec::with_capacity(len));
+                let bin = std::mem::replace(&mut self.bins[bin], Vec::with_capacity(len));
                 let min = *bin.iter().min_by_key(|&x| self.distance[*x]).unwrap();
                 self.last = self.distance[min];
                 self.position[min] = None;

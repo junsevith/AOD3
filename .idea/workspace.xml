@@ -8,18 +8,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="workin">
-      <change afterPath="$PROJECT_DIR$/src/algs/dial_bins_vec.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/experiment_2.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Long-C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Long-C_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Long-n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Random4-c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Random4-c_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Square-C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_Square-n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_USA-road-t_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts — kopia/chart_USA_road-d_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Long-C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Long-C_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Long-n.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Long-n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Long-n_average.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Long-n_average.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Random4-c.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Random4-c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Random4-c_average.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Random4-c_average.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Random4-n.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Random4-n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Random4-n_average.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Random4-n_average.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Square-C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Square-C_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Square-n.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Square-n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_Square-n_average.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_Square-n_average.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_USA-road-t.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_USA-road-t.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_USA-road-t_average.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_USA-road-t_average.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_USA_road-d.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_USA_road-d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/chart_USA_road-d_average.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/chart_USA_road-d_average.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_Long-n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_Long-n_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_Random4-n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_Random4-n_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_Square-n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_Square-n_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_USA-road-t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_USA-road-t_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_USA_road-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/gut/chart_USA_road-d_average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/dial.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/dial.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/dial_bins.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/dial_bins.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/dial_bins_vec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/dial_bins_vec.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/radix_heap_alg.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/radix_heap_alg.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/radix_heap_vec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/radix_heap_vec.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bin/aa_test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/aa_test.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_structures.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_structures.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/sandbox.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/experiment_1.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/experiments/experiment.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiments/experiment.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/experiments/experiment_set.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiments/experiment_set.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/experiments/indicator.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/experiments/indicator.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:test" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:release" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -40,11 +82,14 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/junsevith/AOD3.git&quot;,
-    &quot;accountId&quot;: &quot;7388e34e-defb-4351-a11c-050992479d87&quot;
+    &quot;accountId&quot;: &quot;ea83d790-9fb5-45c6-a818-1c56a58fb700&quot;
   }
 }</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="cowymxcw" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -59,16 +104,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cargo.Run aa_test.executor": "Run",
+    "Cargo.Run experiment_2.executor": "Run",
     "Cargo.Run sandbox.executor": "Run",
     "Cargo.Run test.executor": "Run",
-    "Cargo.Test dial_tests.executor": "Run",
     "Cargo.Test test_dial.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/pawel/RustroverProjects/AOD3/src/algs",
+    "last_opened_file_path": "C:/Users/pawel/RustroverProjects/AOD/src/algs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,20 +122,39 @@
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
     "org.rust.first.attach.projects": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pawel\RustroverProjects\AOD3\src\algs" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD\src\algs" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test dial_tests">
+  <component name="RunManager" selected="Cargo.Run experiment_2">
     <configuration name="Run aa_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="buildProfileId" value="release" />
       <option name="command" value="run --package djikstra --bin aa_test" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run experiment_2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="buildProfileId" value="release" />
+      <option name="command" value="run --package djikstra --bin experiment_2" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -127,24 +191,6 @@
     <configuration name="Run test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="buildProfileId" value="release" />
       <option name="command" value="run --package djikstra --bin test" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test dial_tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="buildProfileId" value="test" />
-      <option name="command" value="test --package djikstra --test test_structures dial_tests -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -197,7 +243,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test dial_tests" />
+        <item itemvalue="Cargo.Run experiment_2" />
         <item itemvalue="Cargo.Run aa_test" />
         <item itemvalue="Cargo.Run test" />
         <item itemvalue="Cargo.Test test_dial" />
@@ -221,8 +267,7 @@
       <workItem from="1733775616836" duration="280000" />
       <workItem from="1733775919715" duration="286000" />
       <workItem from="1733776230728" duration="18991000" />
-      <workItem from="1733833078472" duration="133000" />
-      <workItem from="1733833254733" duration="915000" />
+      <workItem from="1733840591332" duration="18946000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
@@ -278,5 +323,9 @@
     <MESSAGE value="fixed radix heap" />
     <MESSAGE value="workin" />
     <option name="LAST_COMMIT_MESSAGE" value="workin" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
