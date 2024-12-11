@@ -18,13 +18,14 @@ pub fn parse_sources(path: &str) -> Vec<usize> {
                 let _ = iter.next();
                 let _ = iter.next();
                 let _ = iter.next();
+                let _ = iter.next();
                 count = iter.next().unwrap().parse::<usize>().unwrap();
             },
             's' => {
                 let mut iter = line.split_whitespace();
                 let _ = iter.next();
                 let start = iter.next().unwrap().parse::<usize>().unwrap();
-                starts.push(start);
+                starts.push(start-1);
                 count -= 1;
             },
             _ => continue,

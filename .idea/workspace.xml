@@ -7,13 +7,23 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="changes in package structure" />
+    <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="sprawozdanie">
+      <change afterPath="$PROJECT_DIR$/src/parsers/input.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/dial.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/dial.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/dijkstra.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/dijkstra.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/radixheap.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/radixheap.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/pairs.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/pairs.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parsers/sources.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/sources.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:release" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -56,6 +66,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cargo.Run aa_test.executor": "Run",
+    "Cargo.Run dial.executor": "Run",
+    "Cargo.Run dijkstra.executor": "Run",
     "Cargo.Run experiment_2.executor": "Run",
     "Cargo.Run sandbox.executor": "Run",
     "Cargo.Run test.executor": "Run",
@@ -92,10 +104,45 @@
       <recent name="C:\Users\pawel\RustroverProjects\AOD\examples\experiment1" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run experiment_2">
+  <component name="RunManager" selected="Cargo.Run dijkstra">
     <configuration name="Run aa_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="buildProfileId" value="release" />
       <option name="command" value="run --package djikstra --bin aa_test" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run dial" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="buildProfileId" value="dev" />
+      <option name="command" value="run --package djikstra --bin dial" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run dijkstra" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package djikstra --bin dijkstra" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -182,30 +229,13 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test test_dial" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="buildProfileId" value="test" />
-      <option name="command" value="test --package djikstra --test dial_tests test_dial -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run dijkstra" />
+        <item itemvalue="Cargo.Run dial" />
         <item itemvalue="Cargo.Run experiment_2" />
         <item itemvalue="Cargo.Run aa_test" />
         <item itemvalue="Cargo.Run test" />
-        <item itemvalue="Cargo.Test test_dial" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +256,7 @@
       <workItem from="1733775616836" duration="280000" />
       <workItem from="1733775919715" duration="286000" />
       <workItem from="1733776230728" duration="18991000" />
-      <workItem from="1733840591332" duration="24108000" />
+      <workItem from="1733840591332" duration="27776000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
@@ -300,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733876137876</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="sprawozdanie">
+      <option name="closed" value="true" />
+      <created>1733876572577</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733876572577</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +361,8 @@
     <MESSAGE value="workin" />
     <MESSAGE value="charts done" />
     <MESSAGE value="changes in package structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in package structure" />
+    <MESSAGE value="sprawozdanie" />
+    <option name="LAST_COMMIT_MESSAGE" value="sprawozdanie" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

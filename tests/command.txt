@@ -1,0 +1,1 @@
+./dijkstra -d ../../ch9-1.1/inputs/Random4-n/Random4-n.10.0.gr -ss ../../ch9-1.1/inputs/Random4-n/Random4-n.10.0.ss -oss wyniki.txt

@@ -25,7 +25,7 @@ pub fn parse_pairs(path: &str) -> Vec<(usize, usize)> {
                 let _ = iter.next();
                 let first = iter.next().unwrap().parse::<usize>().unwrap();
                 let second = iter.next().unwrap().parse::<usize>().unwrap();
-                pairs.push((first, second));
+                pairs.push((first-1, second-1));
                 count -= 1;
             },
             _ => continue,
