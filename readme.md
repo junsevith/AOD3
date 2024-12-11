@@ -24,12 +24,14 @@ skompilowane programy pojawiają się w folderze:
 target/release
 ```
 
+<br><br>
+
 
 Jeśli chcemy skompilować wszystkie programy, łącznie z tymi do generowania wykresów
 ```
-cargo build --release
+cargo build --example experiment_1 --example experiment_2 --release
 ```
 lub plikiem makefile
 ```
-make all
+make experiments
 ```
