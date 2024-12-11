@@ -7,37 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="charts done">
-      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/structures/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bin/dial.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bin/dijkstra.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bin/radixheap.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parsers/output.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/dial.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/dial.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/dial_bins.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/structures/dial_bins.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/dial_bins_vec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/structures/dial_bins_vec.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/dijkstra.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/dijkstra.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/priority_queue.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/structures/priority_queue.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/radix_heap.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/structures/radix_heap.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/radix_heap_alg.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/radix_heap_alg.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/radix_heap_vec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/structures/radix_heap_vec.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/aa_test.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/experiment_1.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_1/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/experiment_2.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_2.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/test.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiments/chart.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_1/chart.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiments/experiment.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_1/experiment.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiments/experiment_set.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_1/experiment_set.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiments/indicator.rs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/experiment_1/indicator.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/experiments/mod.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parsers/graph.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/graph.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parsers/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/parsers/mod.rs" afterDir="false" />
-    </list>
+    <list default="true" id="fcac1d9b-9cc2-40b3-b094-4608b5f911ae" name="Changes" comment="changes in package structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,11 +85,11 @@
       <recent name="C:\Users\pawel\RustroverProjects\AOD" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pawel\RustroverProjects\AOD" />
+      <recent name="C:\Users\pawel\RustroverProjects\AOD\src" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD\src\algs" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD\src\structures" />
       <recent name="C:\Users\pawel\RustroverProjects\AOD\examples\experiment1" />
-      <recent name="C:\Users\pawel\RustroverProjects\AOD\examples" />
-      <recent name="C:\Users\pawel\RustroverProjects\AOD\examples\exp1" />
     </key>
   </component>
   <component name="RunManager" selected="Cargo.Run experiment_2">
@@ -256,7 +226,7 @@
       <workItem from="1733775616836" duration="280000" />
       <workItem from="1733775919715" duration="286000" />
       <workItem from="1733776230728" duration="18991000" />
-      <workItem from="1733840591332" duration="23646000" />
+      <workItem from="1733840591332" duration="24108000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
@@ -322,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733872198250</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changes in package structure">
+      <option name="closed" value="true" />
+      <created>1733876137876</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733876137876</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +322,8 @@
     <MESSAGE value="fixed radix heap" />
     <MESSAGE value="workin" />
     <MESSAGE value="charts done" />
-    <option name="LAST_COMMIT_MESSAGE" value="charts done" />
+    <MESSAGE value="changes in package structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes in package structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
