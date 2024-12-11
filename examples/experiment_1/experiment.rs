@@ -1,7 +1,7 @@
-use crate::algs::dial::dial;
-use crate::algs::dijkstra::dijkstra;
-use crate::algs::radix_heap_alg::radix_heap;
-use crate::parsers::graph::GraphData;
+use djikstra::algs::dial::dial;
+use djikstra::algs::dijkstra::dijkstra;
+use djikstra::algs::radix_heap_alg::radix_heap;
+use djikstra::parsers::graph::GraphData;
 
 pub fn experiment(data: &GraphData, source: usize) -> ExperimentData {
     let dijkstra_time = {

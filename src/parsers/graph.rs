@@ -16,7 +16,7 @@ impl Graph {
         let mut min_weight = 0;
         let mut max_weight = 0;
 
-        let mut p_type = String::new();
+        let mut _p_type = String::new();
 
         for line in buf_reader.lines() {
             let line = line.unwrap();
@@ -25,7 +25,7 @@ impl Graph {
                 'p' => {
                     let mut iter = line.split_whitespace();
                     let _ = iter.next();
-                    p_type = iter.next().unwrap().to_string();
+                    _p_type = iter.next().unwrap().to_string();
                     let vertices = iter.next().unwrap().parse::<usize>().unwrap();
                     declared_edges = iter.next().unwrap().parse::<usize>().unwrap();
                     graph = Graph::with_vertices(vertices);

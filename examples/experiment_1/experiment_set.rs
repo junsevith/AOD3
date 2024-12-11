@@ -1,13 +1,14 @@
-use crate::experiments::chart::draw_chart;
-use crate::experiments::experiment::{experiment, ExperimentData};
-use crate::experiments::indicator::Indicator;
-use crate::graph::Graph;
+
+use crate::indicator::Indicator;
+use djikstra::graph::Graph;
 use rand::distr::Uniform;
 use rand::{rng, Rng};
-use rayon::iter::IntoParallelIterator;
-use rayon::iter::ParallelIterator;
+// use rayon::iter::IntoParallelIterator;
+// use rayon::iter::ParallelIterator;
 use std::ops::RangeInclusive;
 use std::sync::{Arc, Mutex};
+use crate::chart::draw_chart;
+use crate::experiment::{experiment, ExperimentData};
 
 pub fn experiment_set(name: &str, range: RangeInclusive<usize>, path: fn(usize) -> String) {
     let iter = range;
@@ -45,13 +46,13 @@ pub fn experiment_set(name: &str, range: RangeInclusive<usize>, path: fn(usize) 
 
     let names = vec!["Dijkstra", "Dial", "Radix"];
 
-    draw_chart(data, names.clone(), iter.clone(), name, |x, y| y);
+    draw_chart(data, names.clone(), iter.clone(), name, |_, y| y);
 
     draw_chart(
         averages,
         names,
         iter,
         &format!("{}_average", name),
-        |x, y| y,
+        |_, y| y,
     );
 }

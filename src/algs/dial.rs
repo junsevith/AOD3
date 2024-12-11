@@ -1,5 +1,5 @@
-use crate::algs::dial_bins_vec::DialBinsVec;
 use crate::algs::dijkstra::{ShortestPath, ShortestPaths};
+use crate::algs::structures::dial_bins_vec::DialBinsVec;
 use crate::graph::Graph;
 
 pub fn dial(graph: &Graph, start: usize, c: usize) -> ShortestPaths {
@@ -16,7 +16,7 @@ pub fn dial(graph: &Graph, start: usize, c: usize) -> ShortestPaths {
     let mut previous = vec![None; len];
     bins.add(start, 0);
 
-    let mut count = 0;
+    // let mut count = 0;
 
     while let Some(bin_contents) = bins.next() {
 
@@ -53,7 +53,7 @@ pub fn dial_pair(graph: &Graph, start: usize, end: usize, c: usize) -> ShortestP
     let mut previous = vec![None; len];
     bins.add(start, 0);
 
-    let mut count = 0;
+    // let mut count = 0;
 
     while let Some(bin_contents) = bins.next() {
         for current in bin_contents {

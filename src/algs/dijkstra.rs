@@ -1,4 +1,4 @@
-use crate::algs::priority_queue::PriorityQueue;
+use crate::algs::structures::priority_queue::PriorityQueue;
 use crate::graph::Graph;
 
 pub fn dijkstra(graph: &Graph, start: usize) -> ShortestPaths {

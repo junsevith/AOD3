@@ -1,5 +1,10 @@
-use djikstra::experiments::experiment_set::experiment_set;
+use experiment_set::experiment_set;
 use std::ops::RangeInclusive;
+
+pub mod chart;
+pub mod experiment;
+pub mod experiment_set;
+pub mod indicator;
 // use rayon::prelude::IntoParallelIterator;
 // use rayon::iter::ParallelIterator;
 
@@ -10,14 +15,14 @@ fn main() {
     let usa_range = 0..=(usa_types.len()-1);
 
     let inputs:Vec<(&str, RangeInclusive<usize>, fn(usize) ->String)> = vec![
-        // ("Random4-n", 10..=21, |x| format!("ch9-1.1/inputs/Random4-n/Random4-n.{}.0.gr", x)), //success
-        // ("Random4-c", 0..=15, |x| format!("ch9-1.1/inputs/Random4-c/Random4-c.{}.0.gr", x)), //success
+        ("Random4-n", 10..=21, |x| format!("ch9-1.1/inputs/Random4-n/Random4-n.{}.0.gr", x)), //success
+        ("Random4-c", 0..=15, |x| format!("ch9-1.1/inputs/Random4-c/Random4-c.{}.0.gr", x)), //success
         ("Long-n", 10..=21, |x| format!("ch9-1.1/inputs/Long-n/Long-n.{}.0.gr", x)), //success
-        // ("Square-n", 10..=21, |x| format!("ch9-1.1/inputs/Square-n/Square-n.{}.0.gr", x)), //success
-        // ("USA-road-t", usa_range.clone(), |x| format!("ch9-1.1/inputs/USA-road-t/USA-road-t.{}.gr", usa_type(x))), //success
-        // ("USA_road-d", usa_range.clone(), |x| format!("ch9-1.1/inputs/USA-road-d/USA-road-d.{}.gr", usa_type(x))), //success
-        // ("Long-C", 0..=13, |x| format!("ch9-1.1/inputs/Long-C/Long-C.{}.0.gr", x)), //success
-        // ("Square-C", 0..=14, |x| format!("ch9-1.1/inputs/Square-C/Square-C.{}.0.gr", x)), //success
+        ("Square-n", 10..=21, |x| format!("ch9-1.1/inputs/Square-n/Square-n.{}.0.gr", x)), //success
+        ("USA-road-t", usa_range.clone(), |x| format!("ch9-1.1/inputs/USA-road-t/USA-road-t.{}.gr", usa_type(x))), //success
+        ("USA_road-d", usa_range.clone(), |x| format!("ch9-1.1/inputs/USA-road-d/USA-road-d.{}.gr", usa_type(x))), //success
+        ("Long-C", 0..=13, |x| format!("ch9-1.1/inputs/Long-C/Long-C.{}.0.gr", x)), //success
+        ("Square-C", 0..=14, |x| format!("ch9-1.1/inputs/Square-C/Square-C.{}.0.gr", x)), //success
     ];
 
     inputs.into_iter().for_each(|(name, range, path)| {

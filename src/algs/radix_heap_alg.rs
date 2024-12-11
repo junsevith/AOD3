@@ -1,5 +1,5 @@
 use crate::algs::dijkstra::{ShortestPath, ShortestPaths};
-use crate::algs::radix_heap_vec::RadixHeapVec;
+use crate::algs::structures::radix_heap_vec::RadixHeapVec;
 use crate::graph::Graph;
 
 pub fn radix_heap(graph: &Graph, start: usize, c: usize) -> ShortestPaths {
@@ -10,7 +10,7 @@ pub fn radix_heap(graph: &Graph, start: usize, c: usize) -> ShortestPaths {
 
     let mut previous = vec![None; len];
 
-    let mut count = 0;
+    // let mut count = 0;
 
     while let Some(vertex) = heap.next() {
         // count += 1;
